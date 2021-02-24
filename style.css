@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    /* anche padding: 0; pericoloso però quando ci sono delle liste */
     font-family: 'Roboto', sans-serif;
+    /* le indicazioni generiche sul font come font-family si possono mettere anche solo nel tag html */
 }
 body {
     background-color: lightgrey;
@@ -16,12 +18,14 @@ header {
 .titolo {
     display: inline-block;
     vertical-align: middle;
+    /* per allineare più cose verticalmente devo usare il vertical-align per ognuna di esse */
 }
 main {
     background-color: white;
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    border-radius: 5px;
 }
 .button-section {
     padding: 10px 50px;
@@ -60,6 +64,8 @@ li {
     height: 20px;
     border-radius: 50%;
     text-align: center;
+    line-height: 20px;
+    /* per centrarlo verticalmente */
 }
 .check {
     color: lime;
